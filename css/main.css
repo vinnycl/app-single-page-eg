@@ -1,0 +1,84 @@
+/*  ==========================================================================
+	Imports
+	========================================================================== */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+@import url('../css/icons.css');
+@import url('../css/normalize.css');
+
+/*  ==========================================================================
+	Classes principais
+	========================================================================== */
+* {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+html {font-family: 'Montserrat', sans-serif;}
+body, html {margin: 0px; }
+body {text-align: center; overflow-y: hidden;}
+a {text-decoration: none;}
+ul, ul li {list-style: none; padding: 0; margin: 0;}
+
+.unica-pagina-header {z-index:11; position: fixed; height: 88px; width: 100%; top: 0px;background-color: #080808;box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);}
+.unica-pagina-header h1 {font-size: 12px;color: #9b9b9b; margin: 0; padding: 12px 0 0 0; font-weight: 400;}
+.unica-pagina-header h2 {margin: 0; font-size: 12px;color: #ffffff;font-weight: 400; }
+.unica-pagina-header h3 {font-size: 20px;font-weight: 600;line-height: 1;color: #ffffff; margin: 0;padding: 13px 0 0 0;}
+.unica-pagina-header .link-voltar {position: absolute; top: 15px; left: 10px; width: 24px; height: 24px;  padding: 4px; z-index: 13; } 
+.unica-pagina-header .link-voltar span {color: #8a9aad; font-size: 16px; line-height: 16px;}
+.unica-pagina-section .lista-produtos {z-index: 12; position: relative; }
+.unica-pagina-section .jornal-de-hoje {width: 100%; top: 88px; position: absolute; z-index: 9; left: 0;}
+.unica-pagina-section .lista-produtos {height: 260px; width: 310px; top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute; z-index: 15;}
+.unica-pagina-section .lista-produtos li {display: inline-block; width: 138px; font-size: 14px;line-height: 1; vertical-align: top;}
+.unica-pagina-section .lista-produtos>li:first-child {margin-right: 25px;}
+.unica-pagina-section .lista-produtos li ul li {display: block; width: 100%;}
+.unica-pagina-section .lista-produtos .icones {font-size: 37px; line-height: 37px; height: 48px;}
+.unica-pagina-section .lista-produtos .icones span {color: #ffffff;}
+.unica-pagina-section .lista-produtos .titulos {font-size: 16px;font-weight: 600;line-height: 1.13;color: #ffffff; text-transform: uppercase; padding-top: 5px;}
+.unica-pagina-section .lista-produtos .descricao {line-height: 1.14;color: #9b9b9b; padding: 12px 0 16px 0;}
+.unica-pagina-section .lista-produtos .link-ler {background-color: #8a9aad;line-height: 1.43;}
+.unica-pagina-section .lista-produtos .link-ler a {padding: 16px 0; color: #fff;display: block;}
+.unica-pagina-section .lista-produtos .link-download {margin-top: 16px;border: solid 1px #3d3d3d;line-height: 1;}
+.unica-pagina-section .lista-produtos .link-download a {display: block;color: #ffffff; padding: 18px 0 10px 0;}
+.unica-pagina-section .lista-produtos .link-download span {width: 24px; height: 24px; margin-right: 8px;vertical-align: top; position: relative;}
+.unica-pagina-section .lista-produtos .link-download .texto-acao {font-style: normal; display: inline-block;height: 24px;vertical-align: top;}
+.unica-pagina-section .lista-produtos .link-download .icon-baixado {color: #7ed321;font-size: 16px; top: -2px;}
+.unica-pagina-section .lista-produtos .link-download  .icon-download {color: #8a9aad; font-size: 20px; top: -2px;}
+.unica-pagina-section .lista-produtos .chamar-lista-acoes {position: relative; height: 0px;}
+.unica-pagina-section .lista-produtos .chamar-lista-acoes .lista-acoes {height: 125px;border-radius: 2px;background-color: #494949; position: relative; z-index: 16; padding: 16px 10px; top: 8px;}
+.unica-pagina-section .lista-produtos .chamar-lista-acoes .lista-acoes a {color: #fff;font-size: 14px;line-height: 1;text-align: left; padding: 9px 0; display: block;letter-spacing: -0.5px;}
+.unica-pagina-section .icon-loading {content: " "; background: url(../img/loading.png) 50% 50% no-repeat;display: inline-block; top: -6px;}
+@-webkit-keyframes rotating {from {-webkit-transform: rotate(0deg);-o-transform: rotate(0deg);transform: rotate(0deg);}to {-webkit-transform: rotate(360deg);-o-transform: rotate(360deg);transform: rotate(360deg);}}
+@keyframes rotating {from {-ms-transform: rotate(0deg);-moz-transform: rotate(0deg);-webkit-transform: rotate(0deg);-o-transform: rotate(0deg);transform: rotate(0deg);}to {-ms-transform: rotate(360deg);-moz-transform: rotate(360deg);-webkit-transform: rotate(360deg);-o-transform: rotate(360deg);transform: rotate(360deg);}}
+.unica-pagina-section .rotating {-webkit-animation: rotating 2s linear infinite;-moz-animation: rotating 2s linear infinite;-ms-animation: rotating 2s linear infinite;-o-animation: rotating 2s linear infinite;animation: rotating 2s linear infinite;}
+.unica-pagina-section .top-blur {z-index:10; position: fixed; height: 100%; width: 100%; top: 87px; webkit-filter: blur(1px);-moz-filter: blur(1px);-o-filter: blur(1px);-ms-filter: blur(1px);filter: blur(1px);background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);}
+.unica-pagina-footer {z-index:11;height: 72px;  width: 100%; bottom: 0px; position: fixed; border: solid 1px #222222; padding-top: 15px;background-color: #080808;}
+.unica-pagina-footer h2, .unica-pagina-footer h3 {width: 225px; text-align: left; display: block; margin: 0 auto; font-weight: 400;}
+.unica-pagina-footer h2 {font-size: 14px;color: #ffffff;}
+.unica-pagina-footer h3 {font-size: 13px;color: #9b9b9b; padding: 3px 0 0 0;}
+.unica-pagina-footer .link-biblioteca {width: 32px;height: 32px;border-radius: 16px;background-color: #303030;display: block;position: absolute;bottom: 20px;left: 18px;padding-top: 7px;}
+.unica-pagina-footer .link-biblioteca span {color: #8a9aad; font-size: 14px; line-height: 14px; }
+.unica-pagina-footer .link-seta-ir {width: 25px;height: 25px;position: absolute;bottom: 23px;right: 16px; font-size: 12px; line-height: 12px; padding-top: 8px;}
+.unica-pagina-footer .link-seta-ir span {color: #ffffff;}
+
+@media (max-width: 320px) {
+	.unica-pagina-footer .link-biblioteca {left: 5px;}
+}
+@media (min-width: 768px) {
+	.unica-pagina-header {height: 146px;}
+	.unica-pagina-header h1 {padding-top: 24px;}
+	.unica-pagina-header h3 {padding-top: 48px;}
+	.unica-pagina-header .link-voltar {left: 24px; top: 24px;}
+	.unica-pagina-section .jornal-de-hoje {top: 146px;}
+	.unica-pagina-section .lista-produtos {width: 624px; }
+	.unica-pagina-section .lista-produtos li {width: 276px;}
+	.unica-pagina-section .lista-produtos>li:first-child {margin-right: 65px;}
+	.unica-pagina-footer h2, .unica-pagina-footer h3 {margin-left: 70px;}
+}
+
+/* ==========================================================================
+	Status
+	========================================================================== */
+
+.hidden {display: none !important;}
+.visuallyhidde {border: 0;clip: rect(0 0 0 0);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}
+.visuallyhidden.focusable:active,
+.visuallyhiddenfocusable:focus {clip: auto;height: auto;margin: 0;overflow: visible;position: static;width: auto;}
+.invisible {visibility: hidden;}
+.clearfix:before, .clearfix:after {content: " ";display: table;}
+.clearfix:after {clear: both;}
