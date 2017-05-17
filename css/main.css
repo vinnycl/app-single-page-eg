@@ -40,7 +40,7 @@ ul, ul li {list-style: none; padding: 0; margin: 0;}
 .unica-pagina-section .lista-produtos .link-download .icon-baixado {color: #7ed321;font-size: 16px; top: -2px;}
 .unica-pagina-section .lista-produtos .link-download  .icon-download {color: #8a9aad; font-size: 20px; top: -2px;}
 .unica-pagina-section .lista-produtos .chamar-lista-acoes {position: relative; height: 0px;}
-.unica-pagina-section .lista-produtos .chamar-lista-acoes .lista-acoes {height: 125px;border-radius: 2px;background-color: #494949; position: relative; z-index: 16; padding: 16px 10px; top: 8px;}
+.unica-pagina-section .lista-produtos .chamar-lista-acoes .lista-acoes {height: 125px;border-radius: 2px;background-color: #494949; position: relative; z-index: 16; padding: 16px 10px; top: 8px;width: 101%;left: -1px;}
 .unica-pagina-section .lista-produtos .chamar-lista-acoes .lista-acoes a {color: #fff;font-size: 14px;line-height: 1;text-align: left; padding: 9px 0; display: block;letter-spacing: -0.5px;}
 .unica-pagina-section .icon-loading {content: " "; background: url(../img/loading.png) 50% 50% no-repeat;display: inline-block; top: -6px;}
 @-webkit-keyframes rotating {from {-webkit-transform: rotate(0deg);-o-transform: rotate(0deg);transform: rotate(0deg);}to {-webkit-transform: rotate(360deg);-o-transform: rotate(360deg);transform: rotate(360deg);}}
