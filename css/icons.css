@@ -46,3 +46,9 @@
 .icon-baixado:before {
 	content: "\e906";
 }
+.icon-deletar:before {
+	content: "\e907";
+}
+.icon-revista:before {
+	content: "\e908";
+}
