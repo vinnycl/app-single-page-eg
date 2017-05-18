@@ -80,7 +80,7 @@ body.escolha-download {text-align: center; overflow: hidden;}
 .biblioteca .biblioteca-pagina-header .link-voltar span {color: #8a9aad; font-size: 16px; line-height: 16px;}
 .biblioteca .biblioteca-pagina-header .ordenacao { display: inline-block; width: 48%; max-width: 160px;  }
 .biblioteca .biblioteca-pagina-header .ordenacao.publicacoes {margin-right: 5px;vertical-align: top;}
-.biblioteca .biblioteca-pagina-header .ordenacao span {display: block; text-transform: uppercase;color: #868e96;font-size: 12px;font-weight: 300;text-align: left;}
+.biblioteca .biblioteca-pagina-header .ordenacao span {display: block; text-transform: uppercase;color: #868e96;font-size: 12px;font-weight: 300;text-align: left; padding-bottom: 5px;}
 .biblioteca .biblioteca-pagina-header .ordenacao .lista-ordem {font-family: 'Roboto', sans-serif;}
 .biblioteca .biblioteca-pagina-header .ordenacao .lista-ordem .item-selecionado {border-radius: 2px;  font-size: 15px;line-height: 1.07; }
 .biblioteca .biblioteca-pagina-header .ordenacao .lista-ordem .item-selecionado a {background-color: #eeeeee; border-radius: 2px; color: rgba(0, 0, 0, 0.87);padding: 14px 15px; display: block; position: relative; text-align: left;border-bottom: 1px solid #eee;}
