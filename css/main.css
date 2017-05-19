@@ -73,13 +73,13 @@ body.escolha-download {text-align: center; overflow: hidden;}
 	.escolha-download .unica-pagina-footer h2, .unica-pagina-footer h3 {margin-left: 70px;}
 }
 /* biblioteca */
-
-.biblioteca .biblioteca-pagina-header {background: #fafafa;box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12); position: relative;  text-align: center; padding: 0 15px; height: 133px;}
+body.biblioteca {padding-top: 54px; /* valor vai mudar quando seletores aparecer */}
+.biblioteca .biblioteca-pagina-header {background: #fafafa;box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12); position: relative;  text-align: center; padding: 0 15px ; position: fixed; top: 0; width: 100%;}
 .biblioteca .biblioteca-pagina-header h1 {margin: 0;font-size: 18px; font-weight: 600;color: #030303; padding: 16px 0;}
 .biblioteca .biblioteca-pagina-header .link-voltar {position: absolute; top: 15px; left: 10px; width: 24px; height: 24px;  padding: 4px; z-index: 13; } 
 .biblioteca .biblioteca-pagina-header .link-voltar span {color: #8a9aad; font-size: 16px; line-height: 16px;}
 .biblioteca .biblioteca-pagina-header .ordenacao { display: inline-block; width: 48%; max-width: 160px;  }
-.biblioteca .biblioteca-pagina-header .ordenacao.publicacoes {margin-right: 5px;vertical-align: top;}
+.biblioteca .biblioteca-pagina-header .ordenacao.publicacoes {margin-right: 5px;vertical-align: top;margin-bottom: 15px;}
 .biblioteca .biblioteca-pagina-header .ordenacao span {display: block; text-transform: uppercase;color: #868e96;font-size: 12px;font-weight: 300;text-align: left; padding-bottom: 5px;}
 .biblioteca .biblioteca-pagina-header .ordenacao .lista-ordem {font-family: 'Roboto', sans-serif;}
 .biblioteca .biblioteca-pagina-header .ordenacao .lista-ordem .item-selecionado {border-radius: 2px;  font-size: 15px;line-height: 1.07; }
@@ -90,21 +90,39 @@ body.escolha-download {text-align: center; overflow: hidden;}
 .biblioteca .biblioteca-pagina-header .ordenacao .lista-ordem.ativo .item-selecionado a {background-color: #fafafa; border-bottom: 1px solid rgba(0, 0, 0, 0.12);}
 .biblioteca .biblioteca-pagina-header .ordenacao .lista-ordem.ativo .lista-selecionar a {padding: 14px 15px;color: rgba(0, 0, 0, 0.87); display: block; text-align: left;}
 .biblioteca .biblioteca-pagina-header .ordenacao .lista-ordem.ativo .lista-selecionar a.ativo {background-color: #eeeeee;font-weight: bold;}
-.biblioteca .biblioteca-pagina-section .biblioteca-lista .conteudo-lista {padding: 15px 0; margin: 0 15px; border-bottom: 1px solid #e9ecef; clear: both; overflow: hidden;}
+.biblioteca .biblioteca-pagina-section .biblioteca-lista .conteudo-lista {padding: 15px 0; margin: 0 15px; border: 1px solid transparent; border-bottom: 1px solid #e9ecef; clear: both; overflow: hidden;}
 .biblioteca .biblioteca-pagina-section .biblioteca-lista .conteudo-lista .titulo {font-size: 15px;font-weight: 300;color: #868e96;padding-bottom:10px; text-transform: uppercase; display: block;}
-.biblioteca .biblioteca-pagina-section .biblioteca-lista .conteudo-lista .capa {float: left; width: 102px; margin-right: 12px;}
+.biblioteca .biblioteca-pagina-section .biblioteca-lista .conteudo-lista .capa {float: left; width: 92px; margin-right: 12px;}
+.biblioteca .biblioteca-pagina-section .biblioteca-lista .conteudo-lista .capa img {width: 100%;}
 .biblioteca .biblioteca-pagina-section .biblioteca-lista .conteudo-lista .data {font-size: 18px;font-weight: 600;line-height: 1.11;color: #000000;display: block;}
 .biblioteca .biblioteca-pagina-section .biblioteca-lista .conteudo-lista .botao-acao { display: block; margin-top: 12px; }
-.biblioteca .biblioteca-pagina-section .biblioteca-lista .conteudo-lista .botao-acao .botao-download{background-color: #8a9aad; width: 177px; display: inline-block; padding: 11px 0; text-align: center;font-size: 12px;line-height: 12px;color: #ffffff;}
+.biblioteca .biblioteca-pagina-section .biblioteca-lista .conteudo-lista .botao-acao .botao-download{background-color: #8a9aad; width: 160px; display: inline-block; padding: 11px 0; text-align: center;font-size: 12px;line-height: 12px;color: #ffffff;}
 .biblioteca .biblioteca-pagina-section .biblioteca-lista .conteudo-lista .botao-acao .botao-download span {color: #fff; font-size: 15px; line-height:12px; position: relative; margin-right: 5px; display: inline-block; top: 2px;}
-.biblioteca .biblioteca-pagina-section .biblioteca-lista .conteudo-lista .botao-deletar {width: 24px; height: 24px; text-align: center;display: inline-block; margin-left: 15px;padding-top: 3px;}
+.biblioteca .biblioteca-pagina-section .biblioteca-lista .conteudo-lista .botao-deletar {width: 24px; height: 24px; text-align: center;display: inline-block; padding-top: 3px; position: relative; left: 5px; top: 2px;}
 .biblioteca .biblioteca-pagina-section .biblioteca-lista .conteudo-lista .botao-deletar span {font-size: 18px;}
 @media (max-width: 320px) {
 	.biblioteca .biblioteca-pagina-header .ordenacao .lista-ordem .item-selecionado a {font-size: 13px;}
 }
 @media (min-width: 768px) {
-	.biblioteca .biblioteca-pagina-header .link-voltar {left: 24px; top: 24px;}
+	.biblioteca .biblioteca-pagina-header .link-voltar {left: 15px; top: 15px;}
+	.biblioteca .biblioteca-pagina-section .biblioteca-lista .conteudo-lista {width: 50%; width: calc(50% - 15px); display: inline-block;border: 1px solid #e9ecef;padding: 15px;vertical-align: top;min-height: 220px;margin:0 7.5px 15px 7.5px;}
+	.biblioteca .biblioteca-pagina-section>ul { padding: 15px; font-size: 0px; }
+	.biblioteca .biblioteca-pagina-section .biblioteca-lista .conteudo-lista .botao-acao .botao-download {width: 177px;}
 }
+
+
+
+.biblioteca .biblioteca-pagina-section .biblioteca-lista.selecionado .conteudo-lista {
+	display: none;
+}
+
+/* repetir essa lógica com os outros produtos */
+
+.biblioteca .biblioteca-pagina-section .biblioteca-lista.selecionado.globo .conteudo-lista.globo {
+	display: inline-block;
+}
+
+
 /* ==========================================================================
 	Status
 	========================================================================== */
