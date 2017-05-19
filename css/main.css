@@ -107,7 +107,7 @@ body.biblioteca {padding-top: 54px; /* valor vai mudar quando seletores aparecer
 	.biblioteca .biblioteca-pagina-header .link-voltar {left: 15px; top: 15px;}
 	.biblioteca .biblioteca-pagina-section .biblioteca-lista .conteudo-lista {width: 50%; width: calc(50% - 15px); display: inline-block;border: 1px solid #e9ecef;padding: 15px;vertical-align: top;min-height: 220px;margin:0 7.5px 15px 7.5px;}
 	.biblioteca .biblioteca-pagina-section>ul { padding: 15px; font-size: 0px; }
-	.biblioteca .biblioteca-pagina-section .biblioteca-lista .conteudo-lista .botao-acao .botao-download {width: 177px;}
+	.biblioteca .biblioteca-pagina-section .biblioteca-lista .conteudo-lista .botao-acao .botao-download {width: 177px;width: calc(100% - 130px);}
 }
 
 
